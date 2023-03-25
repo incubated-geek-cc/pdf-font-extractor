@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://github.com/incubated-geek-cc/pdf-font-extractor/raw/main/img/logo.png" width="96" alt="logo">
 
-  # 🗛 PDF Font Extractor
+  # 「🗛」 PDF Font Extractor
 
   ### 🛠️ Built with open-sourced Apache PDFBox v3.0.0. Developed in Java SDK 1.8.
 
@@ -24,7 +24,7 @@
 </div>
 
 ### ✍ Read related post here
-[**Article :: How To Extract Embedded Fonts From A PDF As Valid Font Files In Java**](https://geek-cc.medium.com/build-a-text-to-speech-app-using-client-side-javascript-98cd72df73bb)
+[**Article :: How To Extract Embedded Fonts From A PDF As Valid Font Files In Java**](https://geek-cc.medium.com/how-to-extract-embedded-fonts-from-a-pdf-as-valid-font-files-in-java-1d202fa06f4e)
 
 ### 👀 Preview
 
