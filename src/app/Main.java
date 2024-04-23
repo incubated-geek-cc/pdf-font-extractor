@@ -91,7 +91,7 @@ public class Main  extends JPanel {
     
     private static final HashMap<String,Boolean> FONTNAME_MAPPER  = new HashMap<String,Boolean>();
     private static final JLabel TITLE_DISPLAY = new JLabel("𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚜 𝙴𝚖𝚋𝚎𝚍𝚍𝚎𝚍 𝙵𝚘𝚗𝚝𝚜 𝙵𝚛𝚘𝚖  𝙿𝙳𝙵");
-    private static final JLabel SUBTITLE_DISPLAY = new JLabel(" 𝚁𝚎𝚝𝚞𝚛𝚗𝚜 𝚊𝚕𝚕 𝚏𝚘𝚗𝚝 𝚏𝚒𝚕𝚎𝚜 (.𝚝𝚏𝚏) 𝚒𝚗 𝚊   𝚉𝙸𝙿 𝚊𝚛𝚌𝚑𝚒𝚟𝚎 (.𝚣𝚒𝚙)");
+    private static final JLabel SUBTITLE_DISPLAY = new JLabel(" 𝚁𝚎𝚝𝚞𝚛𝚗𝚜 𝚊𝚕𝚕 𝚏𝚘𝚗𝚝 𝚏𝚒𝚕𝚎𝚜 (.𝚝𝚝𝚏) 𝚒𝚗 𝚊   𝚉𝙸𝙿 𝚊𝚛𝚌𝚑𝚒𝚟𝚎 (.𝚣𝚒𝚙)");
     
     private final HashMap<String,String> UPLOAD_DOC_DETAILS = new HashMap<String,String>();
     private final String[] MONOSPACE_DIGITS = {"𝟶", "𝟷", "𝟸", "𝟹", "𝟺", "𝟻", "𝟼", "𝟽", "𝟾", "𝟿"};
@@ -403,7 +403,7 @@ public class Main  extends JPanel {
         }
         
         SwingUtilities.invokeLater(() -> { // Event dispatch thread For GUI code (asynchronously)
-            APP_FRAME = new JFrame(" PDF Font Extractor  "); 
+            APP_FRAME = new JFrame(" PDF Fonts Extractor "); 
             APP_FRAME.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             APP_FRAME.setSize(FRAME_WIDTH, FRAME_HEIGHT);
 
@@ -496,12 +496,12 @@ public class Main  extends JPanel {
                 }
             }
             if (fd != null) {
-                String fontFilename = name + ".tff";
+                String fontFilename = name + ".ttf";
                 PDStream ff2Stream = fd.getFontFile2();
                 if (ff2Stream != null && !FONTNAME_MAPPER.containsKey(fontFilename)) {
                     byte[] buffer = ff2Stream.toByteArray();
                     fontStream = new ByteArrayInputStream(buffer);
-
+                    
                     zipEntry = new ZipEntry(fontFilename);
                     zipos.putNextEntry(zipEntry);
                     byte[] bytes = new byte[1024];
