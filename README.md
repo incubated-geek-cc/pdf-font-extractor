@@ -7,7 +7,7 @@
 
   <img src="https://github.com/incubated-geek-cc/pdf-font-extractor/raw/main/img/cover_image.png" alt="cover image">
 
-**Extracts all embedded Fonts in a PDF and outputs them as external TrueFontType `.ttf` files**
+**Extracts all embedded Fonts in a PDF and outputs them as external TrueTypeFont `.ttf` files**
 
 <div align="left">
 
