@@ -22,7 +22,7 @@
 
 </div>
 </div>
-
+ 
 ### ✍ Read related post here
 [**Article :: How To Extract Embedded Fonts From A PDF As Valid Font Files In Java**](https://geek-cc.medium.com/how-to-extract-embedded-fonts-from-a-pdf-as-valid-font-files-in-java-1d202fa06f4e)
 
